@@ -14,6 +14,7 @@ public class Rehabilitacion implements IRehabilitacion{
     @Override
     public void asignarTratamiento(ITratamiento tratamiento) {
 
+
     }
 
     @Override
