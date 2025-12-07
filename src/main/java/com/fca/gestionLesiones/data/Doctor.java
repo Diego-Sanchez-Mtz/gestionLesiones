@@ -1,8 +1,6 @@
 package com.fca.gestionLesiones.data;
 
-import java.util.List;
-
-public class Doctor extends Persona implements ILesion, IRehabilitacion, ITratamiento{
+public class Doctor extends Persona{
     private String cedulaProfesional;
 
     public String getCedulaProfesional() {
@@ -23,54 +21,18 @@ public class Doctor extends Persona implements ILesion, IRehabilitacion, ITratam
         //TODO
     }
 
-
-    @Override
-    public void asignarRehabilitacion(IRehabilitacion rehabilitacion) {
+    //Método para asignar lesión a jugadora
+    public void diagnosticarLesion(Jugadora jugadora, ILesion lesion){
         //TODO
     }
 
-    @Override
-    public void actualizarSemanasRecuperacion() {
+    public void asignarRehabilitacionALesion(ILesion lesion, IRehabilitacion rehabilitacion){
         //TODO
     }
 
-    @Override
-    public void darDeAlta() {
+    //Método para asignar tratamiento a un plan de rehabilitación
+    public void asignarTratamientoARehabilitacion(IRehabilitacion rehabilitacion, ITratamiento tratamiento){
         //TODO
     }
 
-    @Override
-    public void estaActiva() {
-        //TODO
-    }
-
-    @Override
-    public void asignarTratamiento(ITratamiento tratamiento) {
-       //TODO
-    }
-
-    @Override
-    public void eliminarTratamiento(ITratamiento tratamiento) {
-        //TODO
-    }
-
-    @Override
-    public List<Tratamiento> obtenerListaTratamientos() {
-        return List.of();
-    }
-
-    @Override
-    public void marcarComoCompletada() {
-        //TODO
-    }
-
-    @Override
-    public void estaCompletada() {
-        //TODO
-    }
-
-    @Override
-    public void asignarTerapeuta() {
-        //TODO
-    }
 }

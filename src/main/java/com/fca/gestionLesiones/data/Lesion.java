@@ -27,7 +27,7 @@ public class Lesion implements ILesion{
     }
 
     @Override
-    public void estaActiva() {
-
+    public boolean estaActiva() {
+        return false;
     }
 }
