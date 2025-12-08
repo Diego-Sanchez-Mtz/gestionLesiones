@@ -2,9 +2,9 @@ package com.fca.gestionLesiones.data;
 
 import java.util.List;
 
-public class Jugadora {
+public class Jugadora implements IJugadora{
     private String posicion;
-    private List<Lesion> lesiones;
+    private List<ILesion> lesiones;
     private Rehabilitacion rehabilitacion;
 
     public String getPosicion() {
@@ -15,11 +15,11 @@ public class Jugadora {
         this.posicion = posicion;
     }
 
-    public List<Lesion> getLesiones() {
+    public List<ILesion> getLesiones() {
         return lesiones;
     }
 
-    public void setLesiones(List<Lesion> lesiones) {
+    public void setLesiones(List<ILesion> lesiones) {
         this.lesiones = lesiones;
     }
 
@@ -31,22 +31,18 @@ public class Jugadora {
         this.rehabilitacion = rehabilitacion;
     }
 
-    //Este método registra una lesión en la lista del atributo lesiones
+    @Override
     public Lesion guardarLesion(TipoLesion tl, ZonaLesion zl, int semanasRecuperacion) {
-        //TODO
-        return new Lesion();
+        return null;
     }
 
-    //Este método lista las lesiones cuyo atributo sea activo == true
-    public List<Lesion> getLesionesActivas() {
-        //TODO
-        return lesiones;
+    @Override
+    public List<ILesion> getLesionesActivas() {
+        return List.of();
     }
 
-    //Este método calcula la edad de la jugadora
-    public int calcularEdad(){
-        //TODO
+    @Override
+    public int calcularEdad() {
         return 0;
     }
-
 }

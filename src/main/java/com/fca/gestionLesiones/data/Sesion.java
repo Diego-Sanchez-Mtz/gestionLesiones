@@ -7,6 +7,8 @@ public class Sesion implements ISesion{
     private Date fechaSesion;
     private String observaciones;
     private boolean completada;
+    private IJugadora jugadora;
+    private ITerapeuta terapeuta;
 
     public int getIdSesion() {
         return idSesion;
@@ -40,19 +42,34 @@ public class Sesion implements ISesion{
         this.completada = completada;
     }
 
+    public IJugadora getJugadora() {
+        return jugadora;
+    }
+
+    public void setJugadora(IJugadora jugadora) {
+        this.jugadora = jugadora;
+    }
+
+    public ITerapeuta getTerapeuta() {
+        return terapeuta;
+    }
+
+    public void setTerapeuta(ITerapeuta terapeuta) {
+        this.terapeuta = terapeuta;
+    }
+
     @Override
     public void marcarComoCompletada() {
-        //TODO
+
     }
 
     @Override
-    public void modificarFecha() {
-        //TODO
+    public void modificarFecha(Date fecha) {
+
     }
 
     @Override
-    public void agregarObservaciones() {
+    public void agregarObservaciones(String observaciones) {
 
     }
-
 }

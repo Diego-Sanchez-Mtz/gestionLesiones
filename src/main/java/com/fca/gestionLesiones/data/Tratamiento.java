@@ -12,7 +12,7 @@ public class Tratamiento implements ITratamiento {
     private Date fechaFin;
     private int sesionesRequeridas;
     private Terapeuta terapeuta;
-    private List<Sesion> sesiones;
+    private List<ISesion> sesiones;
 
     public int getIdTratamiento() {
         return idTratamiento;
@@ -70,11 +70,11 @@ public class Tratamiento implements ITratamiento {
         this.terapeuta = terapeuta;
     }
 
-    public List<Sesion> getSesiones() {
+    public List<ISesion> getSesiones() {
         return sesiones;
     }
 
-    public void setSesiones(List<Sesion> sesiones) {
+    public void setSesiones(List<ISesion> sesiones) {
         this.sesiones = sesiones;
     }
 
@@ -85,15 +85,15 @@ public class Tratamiento implements ITratamiento {
 
     @Override
     public void asignarSesion(ISesion sesion) {
-
+        if (sesiones == null) {
+            sesiones = new ArrayList<>();
+        }
+        sesiones.add(sesion);
     }
 
     public void asignarTerapeuta(Terapeuta terapeuta) {
         //TODO
     }
 
-    public void agregarSesion(Sesion sesion) {
-        //TODO
-    }
 
 }

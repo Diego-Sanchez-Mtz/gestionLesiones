@@ -1,9 +1,12 @@
 package com.fca.gestionLesiones.data;
 
+import java.util.Date;
+
 public interface ISesion {
     public void marcarComoCompletada();
 
-    public void modificarFecha();
+    public void modificarFecha(Date fecha);
 
-    public void agregarObservaciones();
+    public void agregarObservaciones(String observaciones);
+
 }
