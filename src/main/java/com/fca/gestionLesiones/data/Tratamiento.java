@@ -11,72 +11,41 @@ public class Tratamiento implements ITratamiento {
     private Date fechaInicio;
     private Date fechaFin;
     private int sesionesRequeridas;
-    private Terapeuta terapeuta;
+    private ITerapeuta terapeuta;
     private List<ISesion> sesiones;
 
-    public int getIdTratamiento() {
-        return idTratamiento;
-    }
+    public int getIdTratamiento() {return idTratamiento;}
 
-    public void setIdTratamiento(int idTratamiento) {
-        this.idTratamiento = idTratamiento;
-    }
+    public void setIdTratamiento(int idTratamiento) {this.idTratamiento = idTratamiento;}
 
-    public String getNombreTratamiento() {
-        return nombreTratamiento;
-    }
+    public String getNombreTratamiento() {return nombreTratamiento;}
 
-    public void setNombreTratamiento(String nombreTratamiento) {
-        this.nombreTratamiento = nombreTratamiento;
-    }
+    public void setNombreTratamiento(String nombreTratamiento) {this.nombreTratamiento = nombreTratamiento;}
 
-    public String getDescripcionTratamiento() {
-        return DescripcionTratamiento;
-    }
+    public String getDescripcionTratamiento() {return DescripcionTratamiento;}
 
-    public void setDescripcionTratamiento(String descripcionTratamiento) {
-        DescripcionTratamiento = descripcionTratamiento;
-    }
+    public void setDescripcionTratamiento(String descripcionTratamiento) {DescripcionTratamiento = descripcionTratamiento;}
 
-    public Date getFechaInicio() {
-        return fechaInicio;
-    }
+    public Date getFechaInicio() {return fechaInicio;}
 
-    public void setFechaInicio(Date fechaInicio) {
-        this.fechaInicio = fechaInicio;
-    }
+    public void setFechaInicio(Date fechaInicio) {this.fechaInicio = fechaInicio;}
 
-    public Date getFechaFin() {
-        return fechaFin;
-    }
+    public Date getFechaFin() {return fechaFin;}
 
-    public void setFechaFin(Date fechaFin) {
-        this.fechaFin = fechaFin;
-    }
+    public void setFechaFin(Date fechaFin) {this.fechaFin = fechaFin;}
 
-    public int getSesionesRequeridas() {
-        return sesionesRequeridas;
-    }
+    public int getSesionesRequeridas() {return sesionesRequeridas;}
 
-    public void setSesionesRequeridas(int sesionesRequeridas) {
-        this.sesionesRequeridas = sesionesRequeridas;
-    }
+    public void setSesionesRequeridas(int sesionesRequeridas) {this.sesionesRequeridas = sesionesRequeridas;}
 
-    public Terapeuta getTerapeuta() {
-        return terapeuta;
-    }
+    public ITerapeuta getTerapeuta() {return terapeuta;}
 
-    public void setTerapeuta(Terapeuta terapeuta) {
-        this.terapeuta = terapeuta;
-    }
+    public void setTerapeuta(ITerapeuta terapeuta) {this.terapeuta = terapeuta;}
 
-    public List<ISesion> getSesiones() {
-        return sesiones;
-    }
+    public List<ISesion> getSesiones() {return sesiones;}
 
-    public void setSesiones(List<ISesion> sesiones) {
-        this.sesiones = sesiones;
-    }
+    public void setSesiones(List<ISesion> sesiones) {this.sesiones = sesiones;}
+
 
     @Override
     public void asignarTerapeuta(ITerapeuta terapeuta) {
