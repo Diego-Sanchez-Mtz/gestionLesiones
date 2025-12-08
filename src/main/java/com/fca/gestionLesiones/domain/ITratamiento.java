@@ -1,4 +1,4 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 public interface ITratamiento {
     public void asignarTerapeuta(ITerapeuta terapeuta);

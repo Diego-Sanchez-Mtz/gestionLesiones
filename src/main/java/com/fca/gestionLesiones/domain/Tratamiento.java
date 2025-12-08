@@ -1,4 +1,4 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,6 +13,7 @@ public class Tratamiento implements ITratamiento {
     private int sesionesRequeridas;
     private ITerapeuta terapeuta;
     private List<ISesion> sesiones;
+    private IRehabilitacion rehabilitacion;
 
     public int getIdTratamiento() {return idTratamiento;}
 
@@ -46,6 +47,13 @@ public class Tratamiento implements ITratamiento {
 
     public void setSesiones(List<ISesion> sesiones) {this.sesiones = sesiones;}
 
+    public IRehabilitacion getRehabilitacion() {
+        return rehabilitacion;
+    }
+
+    public void setRehabilitacion(IRehabilitacion rehabilitacion) {
+        this.rehabilitacion = rehabilitacion;
+    }
 
     @Override
     public void asignarTerapeuta(ITerapeuta terapeuta) {

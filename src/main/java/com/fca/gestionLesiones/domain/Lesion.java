@@ -1,8 +1,8 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.Date;
 
-public class Lesion implements ILesion{
+public class Lesion implements ILesion {
     private int idLesion;
     private Date fechaInicio;
     private Date fechaAlta;

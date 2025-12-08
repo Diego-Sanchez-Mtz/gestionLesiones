@@ -1,8 +1,8 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.List;
 
-public class Jugadora extends Persona implements IJugadora{
+public class Jugadora extends Persona implements IJugadora {
     private String posicion;
     private List<ILesion> lesiones;
     private IRehabilitacion rehabilitacion;

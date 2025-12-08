@@ -1,14 +1,15 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.Date;
 
-public class Sesion implements ISesion{
+public class Sesion implements ISesion {
     private int idSesion;
     private Date fechaSesion;
     private String observaciones;
     private boolean completada;
     private IJugadora jugadora;
     private ITerapeuta terapeuta;
+    private ITratamiento tratamiento;
 
     public int getIdSesion() {
         return idSesion;
@@ -56,6 +57,14 @@ public class Sesion implements ISesion{
 
     public void setTerapeuta(ITerapeuta terapeuta) {
         this.terapeuta = terapeuta;
+    }
+
+    public ITratamiento getTratamiento() {
+        return tratamiento;
+    }
+
+    public void setTratamiento(ITratamiento tratamiento) {
+        this.tratamiento = tratamiento;
     }
 
     @Override

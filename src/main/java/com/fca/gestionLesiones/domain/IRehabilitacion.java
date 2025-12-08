@@ -1,4 +1,4 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.List;
 
@@ -7,5 +7,7 @@ public interface IRehabilitacion {
     public void eliminarTratamiento(ITratamiento tratamiento);
     public List<Tratamiento> obtenerListaTratamientos();
     public void marcarComoCompletada();
-    public void estaCompletada();
+    public boolean estaCompletada();
+    public void incrementarSesion();
+
 }

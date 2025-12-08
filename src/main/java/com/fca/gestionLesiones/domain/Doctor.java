@@ -1,8 +1,8 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 import java.util.Date;
 
-public class Doctor extends Persona implements IDoctor{
+public class Doctor extends Persona implements IDoctor {
     private String cedulaProfesional;
 
     public String getCedulaProfesional() {

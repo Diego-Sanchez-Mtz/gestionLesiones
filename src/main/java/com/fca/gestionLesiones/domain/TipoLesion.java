@@ -1,4 +1,4 @@
-package com.fca.gestionLesiones.data;
+package com.fca.gestionLesiones.domain;
 
 public enum TipoLesion {
     FRACTURA("Fractura"),
