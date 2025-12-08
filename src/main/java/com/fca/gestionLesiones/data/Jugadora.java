@@ -5,31 +5,20 @@ import java.util.List;
 public class Jugadora extends Persona implements IJugadora{
     private String posicion;
     private List<ILesion> lesiones;
-    private Rehabilitacion rehabilitacion;
+    private IRehabilitacion rehabilitacion;
 
-    public String getPosicion() {
-        return posicion;
-    }
+    public List<ILesion> getLesiones() { return lesiones; }
 
-    public void setPosicion(String posicion) {
-        this.posicion = posicion;
-    }
+    public void setLesiones(List<ILesion> lesiones) { this.lesiones = lesiones; }
 
-    public List<ILesion> getLesiones() {
-        return lesiones;
-    }
+    public String getPosicion() { return posicion; }
 
-    public void setLesiones(List<ILesion> lesiones) {
-        this.lesiones = lesiones;
-    }
+    public void setPosicion(String posicion) { this.posicion = posicion; }
 
-    public Rehabilitacion getRehabilitacion() {
-        return rehabilitacion;
-    }
+    public IRehabilitacion getRehabilitacion() { return rehabilitacion; }
 
-    public void setRehabilitacion(Rehabilitacion rehabilitacion) {
-        this.rehabilitacion = rehabilitacion;
-    }
+    public void setRehabilitacion(IRehabilitacion rehabilitacion) { this.rehabilitacion = rehabilitacion; }
+
 
     @Override
     public Lesion guardarLesion(TipoLesion tl, ZonaLesion zl, int semanasRecuperacion) {
