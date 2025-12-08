@@ -1,8 +1,8 @@
 package com.fca.gestionLesiones.data;
 
 public interface ILesion{
-    public abstract void asignarRehabilitacion(IRehabilitacion rehabilitacion);
-    public abstract void actualizarSemanasRecuperacion();
-    public abstract void darDeAlta();
-    public abstract boolean estaActiva();
+    public void asignarRehabilitacion(IRehabilitacion rehabilitacion);
+    public void actualizarSemanasRecuperacion();
+    public void darDeAlta();
+    public boolean estaActiva();
 }

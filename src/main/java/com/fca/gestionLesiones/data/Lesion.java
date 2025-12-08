@@ -10,6 +10,71 @@ public class Lesion implements ILesion{
     private boolean estado;
     private TipoLesion tipoLesion;
     private ZonaLesion zonaLesion;
+    private Rehabilitacion rehabilitacion;
+
+    public int getIdLesion() {
+        return idLesion;
+    }
+
+    public void setIdLesion(int idLesion) {
+        this.idLesion = idLesion;
+    }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Date getFechaAlta() {
+        return fechaAlta;
+    }
+
+    public void setFechaAlta(Date fechaAlta) {
+        this.fechaAlta = fechaAlta;
+    }
+
+    public int getSemanasRecuperacion() {
+        return semanasRecuperacion;
+    }
+
+    public void setSemanasRecuperacion(int semanasRecuperacion) {
+        this.semanasRecuperacion = semanasRecuperacion;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public TipoLesion getTipoLesion() {
+        return tipoLesion;
+    }
+
+    public void setTipoLesion(TipoLesion tipoLesion) {
+        this.tipoLesion = tipoLesion;
+    }
+
+    public ZonaLesion getZonaLesion() {
+        return zonaLesion;
+    }
+
+    public void setZonaLesion(ZonaLesion zonaLesion) {
+        this.zonaLesion = zonaLesion;
+    }
+
+    public Rehabilitacion getRehabilitacion() {
+        return rehabilitacion;
+    }
+
+    public void setRehabilitacion(Rehabilitacion rehabilitacion) {
+        this.rehabilitacion = rehabilitacion;
+    }
 
     @Override
     public void asignarRehabilitacion(IRehabilitacion rehabilitacion) {

@@ -35,4 +35,9 @@ public class Doctor extends Persona{
         //TODO
     }
 
+    //Método para asignar terapeuta a un tratamiento
+    public void asignarTerapeutaATratamiento(ITratamiento tratamiento, ITerapeuta terapeuta){
+        //TODO
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.fca.gestionLesiones.data;
 
 public interface ITratamiento {
-    public abstract void asignarTerapeuta();
+    public void asignarTerapeuta(ITerapeuta terapeuta);
+    public void asignarSesion(ISesion sesion);
 }

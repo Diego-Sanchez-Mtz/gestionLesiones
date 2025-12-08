@@ -6,7 +6,7 @@ public enum TipoLesion {
     SOBRECARGA_MUSCULAR("Sobrecarga muscular"),
     TENDINITIS("Tendinitis"),
     HIPEREXTENSION("Hiperextensión"),
-    DESGARRE_MUSCULAR("Desgare muscular"),
+    DESGARRE_MUSCULAR("Desgarre muscular"),
     ROTURA_DE_LIGAMENTO("Rotura de ligamiento"),
     CONTUSION("Contusión");
 
