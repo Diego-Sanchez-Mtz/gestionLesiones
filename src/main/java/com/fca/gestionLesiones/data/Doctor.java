@@ -2,7 +2,7 @@ package com.fca.gestionLesiones.data;
 
 import java.util.Date;
 
-public class Doctor extends Persona{
+public class Doctor extends Persona implements IDoctor{
     private String cedulaProfesional;
 
     public String getCedulaProfesional() {
@@ -23,31 +23,29 @@ public class Doctor extends Persona{
         //TODO
     }
 
-    //Método para asignar lesión a jugadora
-    public void diagnosticarLesion(Jugadora jugadora, ILesion lesion){
-        //TODO
+
+    @Override
+    public void diagnosticarLesion(Jugadora jugadora, ILesion lesion) {
+
     }
 
-    public void asignarRehabilitacionALesion(ILesion lesion, IRehabilitacion rehabilitacion){
-        //TODO
+    @Override
+    public void asignarRehabilitacionALesion(ILesion lesion, IRehabilitacion rehabilitacion) {
+
     }
 
-    //Método para asignar tratamiento a un plan de rehabilitación
-    public void asignarTratamientoARehabilitacion(IRehabilitacion rehabilitacion, ITratamiento tratamiento){
-        //TODO
+    @Override
+    public void asignarTratamientoARehabilitacion(IRehabilitacion rehabilitacion, ITratamiento tratamiento) {
+
     }
 
-    //Método para asignar terapeuta a un tratamiento
-    public void asignarTerapeutaATratamiento(ITratamiento tratamiento, ITerapeuta terapeuta){
-        //TODO
+    @Override
+    public void asignarTerapeutaATratamiento(ITratamiento tratamiento, ITerapeuta terapeuta) {
+
     }
 
-    public void agendarSesion(
-            IJugadora jugadora,
-            ITerapeuta terapeuta,
-            ITratamiento tratamiento,
-            Date fechaSesion
-    ) {
+    @Override
+    public void agendarSesion(IJugadora jugadora, ITerapeuta terapeuta, ITratamiento tratamiento, Date fechaSesion) {
         Sesion sesion = new Sesion();
         sesion.setJugadora(jugadora);
         sesion.setTerapeuta(terapeuta);
@@ -55,5 +53,4 @@ public class Doctor extends Persona{
 
         tratamiento.asignarSesion(sesion);
     }
-
 }

@@ -11,6 +11,8 @@ public class Lesion implements ILesion{
     private TipoLesion tipoLesion;
     private ZonaLesion zonaLesion;
     private Rehabilitacion rehabilitacion;
+    private IJugadora jugadora;
+    private IDoctor doctor;
 
     public int getIdLesion() {
         return idLesion;
@@ -74,6 +76,22 @@ public class Lesion implements ILesion{
 
     public void setRehabilitacion(Rehabilitacion rehabilitacion) {
         this.rehabilitacion = rehabilitacion;
+    }
+
+    public IJugadora getJugadora() {
+        return jugadora;
+    }
+
+    public void setJugadora(IJugadora jugadora) {
+        this.jugadora = jugadora;
+    }
+
+    public IDoctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(IDoctor doctor) {
+        this.doctor = doctor;
     }
 
     @Override

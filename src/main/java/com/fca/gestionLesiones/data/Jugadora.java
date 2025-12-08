@@ -2,7 +2,7 @@ package com.fca.gestionLesiones.data;
 
 import java.util.List;
 
-public class Jugadora implements IJugadora{
+public class Jugadora extends Persona implements IJugadora{
     private String posicion;
     private List<ILesion> lesiones;
     private Rehabilitacion rehabilitacion;
@@ -44,5 +44,15 @@ public class Jugadora implements IJugadora{
     @Override
     public int calcularEdad() {
         return 0;
+    }
+
+    @Override
+    public void editarTelefono(String telefono) {
+
+    }
+
+    @Override
+    public void editarCorreo(String correo) {
+
     }
 }
