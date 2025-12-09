@@ -68,9 +68,4 @@ public class Tratamiento implements ITratamiento {
         sesiones.add(sesion);
     }
 
-    public void asignarTerapeuta(Terapeuta terapeuta) {
-        //TODO
-    }
-
-
 }
