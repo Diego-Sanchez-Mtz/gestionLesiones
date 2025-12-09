@@ -4,7 +4,7 @@ import java.util.Date;
 
 public interface IDoctor {
     //Método para asignar lesión a jugadora
-    public void diagnosticarLesion(Jugadora jugadora, ILesion lesion);
+    public void diagnosticarLesion(IJugadora jugadora, ILesion lesion);
 
     public void asignarRehabilitacionALesion(ILesion lesion, IRehabilitacion rehabilitacion);
 

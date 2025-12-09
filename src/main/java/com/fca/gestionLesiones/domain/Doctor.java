@@ -23,10 +23,9 @@ public class Doctor extends Persona implements IDoctor {
         //TODO
     }
 
-
     @Override
-    public void diagnosticarLesion(Jugadora jugadora, ILesion lesion) {
-
+    public void diagnosticarLesion(IJugadora jugadora, ILesion lesion) {
+        //TODO
     }
 
     @Override
